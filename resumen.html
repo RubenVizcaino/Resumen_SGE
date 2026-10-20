@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resumen Exhaustivo UD01: Sistemas ERP y CRM - RetroByte Store S.L.</title>
+    <style>
+        :root {
+            --primary: #17365D;
+            --secondary: #2F75B5;
+            --accent: #70AD47;
+            --warning: #ED7D31;
+            --purple: #7030A0;
+            --danger: #C00000;
+            --bg: #F4F6F9;
+            --text: #243447;
+            --card-bg: #FFFFFF;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--bg);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        header {
+            border-bottom: 4px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--primary);
+            margin: 0 0 10px 0;
+            font-size: 2.1rem;
+        }
+
+        h2.block-title {
+            color: #ffffff;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            padding: 12px 18px;
+            border-radius: 8px;
+            margin-top: 35px;
+            font-size: 1.35rem;
+        }
+
+        h3 {
+            color: var(--secondary);
+            margin-top: 20px;
+            border-bottom: 2px solid #E2E8F0;
+            padding-bottom: 5px;
+        }
+
+        .highlight-box {
+            background-color: #EBF3FA;
+            border-left: 5px solid var(--secondary);
+            padding: 12px 16px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .important {
+            background-color: #FDF2E9;
+            border-left: 5px solid var(--warning);
+            padding: 12px 16px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+            font-weight: 500;
+        }
+
+        .rule {
+            background-color: #F3EBF6;
+            border-left: 5px solid var(--purple);
+            padding: 12px 16px;
+            margin: 15px 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 18px 0;
+        }
+
+        th,
+        td {
+            padding: 10px 14px;
+            border: 1px solid #CBD5E1;
+            text-align: left;
+            font-size: 0.95rem;
+        }
+
+        th {
+            background-color: var(--primary);
+            color: #ffffff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #F8FAFC;
+        }
+
+        ul,
+        ol {
+            padding-left: 25px;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        code {
+            background: #E2E8F0;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: Consolas, monospace;
+            font-size: 0.92rem;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 3px 8px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            border-radius: 4px;
+            color: #fff;
+        }
+
+        .badge-purple {
+            background: var(--purple);
+        }
+
+        .badge-green {
+            background: var(--accent);
+        }
+
+        .badge-blue {
+            background: var(--secondary);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <header>
+            <span class="badge badge-purple">2.º DAM · Sistemas de Gestión Empresarial</span>
+            <h1>UD01: Resumen Integral Bloque por Bloque</h1>
+            <p><strong>Proyecto Integrador:</strong> RetroByte Store S.L. | <strong>Resultados de Aprendizaje:</strong>
+                RA1 (a-h)</p>
+        </header>
+
+        <!-- BLOQUE 1 A 3 -->
+        <h2 class="block-title">Bloques 1, 2 y 3 · Información Empresarial, ERP y CRM</h2>
+
+        <h3>1. Tratamiento de la información y silos de datos</h3>
+        <p>En organizaciones no integradas se produce el fenómeno de las <strong>múltiples verdades</strong> debido al
+            uso de hojas de cálculo aisladas (ej. <code>clientes.xlsx</code> vs. copias locales desactualizadas). Esto
+            genera <em>silos de datos</em>, inconsistencia y pérdida de tiempo.</p>
+        <ul>
+            <li><strong>Dato:</strong> Pieza elemental sin procesar (ej. un teléfono).</li>
+            <li><strong>Información:</strong> Dato contextualizado con significado (ej. teléfono de cobro de un cliente
+                moroso).</li>
+            <li><strong>Integración:</strong> Conexión de flujos de datos en tiempo real entre departamentos.</li>
+        </ul>
+
+        <h3>2. Sistemas ERP (Enterprise Resource Planning)</h3>
+        <div class="highlight-box">
+            <strong>Pregunta directriz:</strong> <em>¿Cómo ejecuto y coordino la operación interna?</em>
+        </div>
+        <p>Coordina y modela los procesos de negocio en una base de datos centralizada y relacional. Es
+            <strong>modular</strong> (se activan áreas según necesidad) y garantiza <strong>trazabilidad
+                transversal</strong>: un pedido de venta genera automáticamente una reserva en inventario y un borrador
+            en facturación.</p>
+
+        <h3>3. Sistemas CRM (Customer Relationship Management)</h3>
+        <div class="highlight-box">
+            <strong>Pregunta directriz:</strong> <em>¿Cómo capto, gestiono y fidelizo la oportunidad comercial?</em>
+        </div>
+        <p>Gestiona el ciclo de vida del cliente. Sus componentes clave son:</p>
+        <ul>
+            <li><strong>Lead / Iniciativa:</strong> Contacto inicial sin cualificar comercialmente.</li>
+            <li><strong>Oportunidad:</strong> Posible venta cualificada con importe estimado y probabilidad de cierre.
+            </li>
+            <li><strong>Pipeline (Embudo):</strong> Fases visuales por las que avanza una oportunidad.</li>
+            <li><strong>Actividades:</strong> Tareas programadas (llamadas, emails, reuniones) para evitar abandono
+                comercial.</li>
+        </ul>
+        <div class="rule">
+            <strong>Integración ERP + CRM (El caso ByteSchool):</strong> ByteSchool solicita 20 teclados → CRM abre
+            oportunidad → se cualifica y gana → ERP (Ventas) confirma pedido → Inventario despacha → Facturación emite
+            cobro. Forman una única historia continua.
+        </div>
+
+        <!-- BLOQUE 4 A 6 -->
+        <h2 class="block-title">Bloques 4, 5 y 6 · Mercado, Licenciamiento y Despliegue</h2>
+
+        <h3>4. Soluciones ERP-CRM actuales en el mercado</h3>
+        <p>No existen «rankings universales». La solución adecuada depende de los requerimientos y el contexto:</p>
+        <table>
+            <tr>
+                <th>Solución</th>
+                <th>Enfoque Principal</th>
+                <th>Modelo de Licencia</th>
+            </tr>
+            <tr>
+                <td><strong>Odoo 19</strong></td>
+                <td>Plataforma modular suite completa (CRM/ERP).</td>
+                <td>Community (LGPLv3) / Enterprise (Comercial).</td>
+            </tr>
+            <tr>
+                <td><strong>SAP</strong></td>
+                <td>Gran cuenta corporativa, multinacionales y procesos complejos.</td>
+                <td>Propietaria comercial.</td>
+            </tr>
+            <tr>
+                <td><strong>Microsoft Dynamics 365</strong></td>
+                <td>Integración con Power Platform, Azure y ecosistema Microsoft.</td>
+                <td>Propietaria por suscripción comercial.</td>
+            </tr>
+            <tr>
+                <td><strong>Oracle Cloud ERP</strong></td>
+                <td>Grandes finanzas, compras corporativas y gestión global.</td>
+                <td>Propietaria comercial.</td>
+            </tr>
+            <tr>
+                <td><strong>ERPNext</strong></td>
+                <td>ERP modular de código abierto sobre Frappe framework.</td>
+                <td>Open Source (GNU GPLv3).</td>
+            </tr>
+        </table>
+
+        <h3>5. Tipos de licencias de software</h3>
+        <div class="important">
+            <strong>Trampa habitual:</strong> GRATIS ≠ LIBRE, y OPEN SOURCE ≠ COSTE CERO. El coste de propiedad engloba
+            implantación, hardware, consultoría y mantenimiento.
+        </div>
+        <ul>
+            <li><strong>Software Propietario:</strong> El titular restringe derechos de acceso, modificación y
+                redistribución.</li>
+            <li><strong>Software Libre:</strong> Garantiza las 4 libertades básicas del usuario según la Free Software
+                Foundation.</li>
+            <li><strong>Open Source:</strong> El código fuente está disponible públicamente bajo licencias avaladas por
+                la OSI.</li>
+            <li><strong>Diferenciación Odoo 19:</strong>
+                <ul>
+                    <li><em>Community:</em> Licencia <code>GNU LGPLv3</code>, código abierto, sin coste de licencia.
+                    </li>
+                    <li><em>Enterprise:</em> Licencia <code>Odoo Enterprise Edition License v1.0</code>, código fuente
+                        compartido bajo suscripción comercial obligatoria.</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>6. Modelos de Despliegue</h3>
+        <ul>
+            <li><strong>Monopuesto / Standalone:</strong> Todo en un PC local; solo para pruebas elementales.</li>
+            <li><strong>Cliente-Servidor On-Premise:</strong> Servidor bajo control directo de la organización. Aporta
+                <em>máximo control</em> pero exige <em>plena responsabilidad</em> en seguridad, parches y backups.</li>
+            <li><strong>Cloud (IaaS):</strong> Alquiler de infraestructura (servidores virtuales). Se administra el SO y
+                la aplicación.</li>
+            <li><strong>SaaS (Software as a Service):</strong> El proveedor aloja y mantiene la plataforma, la base de
+                datos y la seguridad; el cliente solo consume la solución vía navegador.</li>
+        </ul>
+        <div class="rule">
+            <strong>Decisión para RetroByte:</strong> Se implanta Odoo 19 Community en Máquina Virtual On-Premise de
+            laboratorio (Ubuntu Server 24.04 LTS + PostgreSQL) para permitir el estudio integral de la arquitectura y el
+            desarrollo futuro de módulos en 2.º DAM.
+        </div>
+
+        <!-- BLOQUE 7 A 9 -->
+        <h2 class="block-title">Bloques 7, 8 y 9 · Arquitectura Odoo 19, SO, SGBD y Auditoría VM</h2>
+
+        <h3>7. Arquitectura de 3 Capas de Odoo</h3>
+        <ol>
+            <li><strong>Capa de Presentación (Cliente Web):</strong> Navegador que procesa HTML5, CSS y JavaScript.
+                <em>Muestra la interfaz y recoge eventos.</em></li>
+            <li><strong>Capa de Aplicación (Servidor Odoo):</strong> Motor Python con ORM (Object-Relational Mapping),
+                modelos, lógica de negocio y control de accesos.</li>
+            <li><strong>Capa de Datos (PostgreSQL):</strong> SGBD relacional donde reside toda la persistencia.</li>
+        </ol>
+        <div class="important">
+            <strong>Regla de seguridad:</strong> El navegador NUNCA se conecta directamente a PostgreSQL. Las peticiones
+            pasan siempre por el servidor Odoo para validar permisos y reglas de negocio.
+        </div>
+
+        <h3>8. Sistema Operativo y SGBD</h3>
+        <ul>
+            <li><strong>Sistema Operativo:</strong> <code>Ubuntu Server 24.04 LTS (Noble Numbat)</code>. Es el estándar
+                compatible oficialmente con el paquete <code>.deb</code> de Odoo 19.</li>
+            <li><strong>SGBD:</strong> <code>PostgreSQL</code>. La documentación oficial de Odoo 19 exige
+                <strong>PostgreSQL 13 o superior</strong> para instalaciones desde código.</li>
+        </ul>
+
+        <h3>9. Auditoría y Verificación de la Máquina Virtual (VM)</h3>
+        <div class="highlight-box">
+            <strong>Configuración pedagógica del aula (no mínimos universales de Odoo):</strong> 2 vCPU, 4 GB RAM, 30 GB
+            almacenamiento, red en modo puente/NAT.
+        </div>
+        <table>
+            <tr>
+                <th>Parámetro</th>
+                <th>Comando de Comprobación</th>
+                <th>Objetivo de Diagnóstico</th>
+            </tr>
+            <tr>
+                <td>Usuario</td>
+                <td><code>whoami</code></td>
+                <td>Verificar permisos y cuenta activa.</td>
+            </tr>
+            <tr>
+                <td>Sistema Operativo</td>
+                <td><code>cat /etc/os-release</code></td>
+                <td>Comprobar distribución Ubuntu 24.04 LTS.</td>
+            </tr>
+            <tr>
+                <td>Arquitectura CPU</td>
+                <td><code>uname -m</code> / <code>lscpu</code></td>
+                <td>Comprobar arquitectura (x86_64 / aarch64) y número de cores (2 vCPU).</td>
+            </tr>
+            <tr>
+                <td>Memoria RAM</td>
+                <td><code>free -h</code></td>
+                <td>Verificar RAM total (≈ 4 GB) y memoria disponible real.</td>
+            </tr>
+            <tr>
+                <td>Almacenamiento</td>
+                <td><code>df -h</code></td>
+                <td>Verificar capacidad de la raíz <code>/</code> y porcentaje libre (&lt; 85%).</td>
+            </tr>
+            <tr>
+                <td>Red e IP</td>
+                <td><code>ip addr</code> / <code>hostname -I</code></td>
+                <td>Comprobar conectividad IP asignada y activa.</td>
+            </tr>
+            <tr>
+                <td>Versión SGBD</td>
+                <td><code>psql --version</code></td>
+                <td>Comprobar versión PostgreSQL (debe ser ≥ 13.x).</td>
+            </tr>
+            <tr>
+                <td>Estado del Servicio</td>
+                <td><code>systemctl status postgresql</code></td>
+                <td>Comprobar estado activo (<code>active (running)</code> vs. <code>inactive</code>).</td>
+            </tr>
+        </table>
+
+        <!-- BLOQUE 11 Y 12 -->
+        <h2 class="block-title">Bloques 11 y 12 · Documentación Técnica, Incidencias y Proyecto RetroByte</h2>
+
+        <h3>10. Registro Profesional de Operaciones</h3>
+        <p>Un técnico debe saber explicar y demostrar lo que ha hecho. Un registro formal consta de 6 campos:</p>
+        <ul>
+            <li><strong>Objetivo:</strong> ¿Qué pretendo comprobar o ejecutar?</li>
+            <li><strong>Acción:</strong> ¿Qué comando o procedimiento exacto aplico?</li>
+            <li><strong>Resultado:</strong> ¿Qué salida devuelve textualmente el sistema?</li>
+            <li><strong>Interpretación:</strong> ¿Qué significado técnico tiene esa salida?</li>
+            <li><strong>Evidencia:</strong> Identificador unívoco de la captura de pantalla asociada (ej.
+                <code>CAP-03</code>).</li>
+            <li><strong>Estado:</strong> Correcto / Incorrecto / Pendiente.</li>
+        </ul>
+
+        <h3>11. Tratamiento Metodológico de Incidencias</h3>
+        <div class="important">
+            «No funciona» o «No puedo entrar» es un <strong>SÍNTOMA</strong> (percepción del fallo), NO un diagnóstico.
+        </div>
+        <p>El ciclo estructurado de resolución incluye:</p>
+        <ol>
+            <li><strong>Síntoma:</strong> Manifestación observable del fallo.</li>
+            <li><strong>Impacto:</strong> Efecto operativo en el negocio o laboratorio.</li>
+            <li><strong>Diagnóstico:</strong> Causa técnica raíz demostrada (ej. servicio PostgreSQL en estado
+                <code>inactive</code>).</li>
+            <li><strong>Solución:</strong> Intervención aplicada (ej. <code>sudo systemctl start postgresql</code>).
+            </li>
+            <li><strong>Verificación:</strong> Comprobación posterior que demuestra que el servicio responde (ej.
+                <code>systemctl is-active</code> devuelve <code>active</code>). <em>Una incidencia nunca se cierra sin
+                    verificación previa.</em></li>
+        </ol>
+
+        <h3>12. Calidad de las Evidencias (Test de los 5 Segundos)</h3>
+        <ul>
+            <li>Evitar capturas genéricas (<code>captura1.png</code>) o recortes diminutos sin contexto de terminal.
+            </li>
+            <li>Nombrado profesional: <code>EVID-03_PostgreSQL_activo.png</code>.</li>
+            <li><strong>Test de 5 segundos:</strong> Cualquier otro técnico debe entender qué demuestra la imagen sin
+                necesidad de preguntar.</li>
+        </ul>
+
+        <h3>13. Matriz Problema → Necesidad → Módulo (RetroByte Store S.L.)</h3>
+        <div class="rule">
+            <strong>Regla de oro:</strong> Nunca se implanta al revés. Primero se identifica el problema de negocio, se
+            define la necesidad y por último se elige la herramienta.
+        </div>
+        <table>
+            <tr>
+                <th>Problema en RetroByte</th>
+                <th>Necesidad Empresarial</th>
+                <th>Módulo / Área Odoo</th>
+            </tr>
+            <tr>
+                <td>Clientes duplicados en varios Excel</td>
+                <td>Centralizar contactos y direcciones</td>
+                <td><strong>Contactos</strong></td>
+            </tr>
+            <tr>
+                <td>Oportunidades y cotizaciones perdidas</td>
+                <td>Gestionar ciclo comercial y pipeline</td>
+                <td><strong>CRM</strong></td>
+            </tr>
+            <tr>
+                <td>Ventas desconectadas del stock real</td>
+                <td>Integrar pedidos con existencias de almacén</td>
+                <td><strong>Ventas + Inventario</strong></td>
+            </tr>
+            <tr>
+                <td>Aprovisionamiento disperso por email</td>
+                <td>Trazabilidad de proveedores y pedidos de compra</td>
+                <td><strong>Compras</strong></td>
+            </tr>
+            <tr>
+                <td>Facturación aislada en PDF</td>
+                <td>Generar facturas a partir de albaranes/pedidos</td>
+                <td><strong>Facturación</strong></td>
+            </tr>
+        </table>
+
+        <h3>14. Conclusiones del Informe de Viabilidad</h3>
+        <ul>
+            <li><strong>VIABLE:</strong> Todos los requisitos de infraestructura, SO, SGBD y compatibilidad están
+                superados y los servicios operativos.</li>
+            <li><strong>VIABLE CON CONDICIONES:</strong> Se puede continuar pero subsanando observaciones menores (ej.
+                liberar espacio en disco o configurar IP estática).</li>
+            <li><strong>NO VIABLE TODAVÍA:</strong> Existen bloqueos insalvables (ej. versión de SGBD incompatible o
+                recursos de hardware insuficientes).</li>
+        </ul>
+    </div>
+</body>
+
+</html>
